@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
-$('select').append('<option>NYC</option>');
-$('select').append('<option>SF</option>');
-$('select').append('<option>SYD</option>');
-$('select').append('<option>Austin</option>');
-$('select').append('<option>LA</option>');
+    var cities = ["NYC", "SF", "SYD", "Austin", "LA"]
+    
+    cities.forEach(function(city, index) {
+        $('#city-type').append('<option>' + city + '</option>')
+        });
 
     $('#city-type').change(function(event){
         event.preventDefault();
@@ -24,4 +24,8 @@ $('select').append('<option>LA</option>');
         }
      }); 
 
+    
+
+
 });
+
