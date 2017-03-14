@@ -23,9 +23,5 @@ $(document).ready(function(){
             $('body').attr("class", "la");
         }
      }); 
-
-    
-
-
 });
 
